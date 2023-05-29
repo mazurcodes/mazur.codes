@@ -1,0 +1,16 @@
+export enum TechStack {
+  NEXTJS = "nextjs",
+  REACT = "react",
+  ASTRO = "astro",
+  HTML = "html",
+  SCSS = "scss",
+  TYPESCRIPT = "typescript",
+  JAVASCRIPT = "javascript",
+  EXPRESSJS = "expressjs",
+  CYPRESS = "cypress",
+  PLAYWRIGHT = "playwright",
+  VITEST = "vitest",
+  STYLED_COMPONENTS = "styled_components",
+  MARKDOWN_IT = "markdown_it",
+  REDUX = "redux",
+}
