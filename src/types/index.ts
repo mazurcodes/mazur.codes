@@ -1,31 +1,37 @@
-import type { TechStack } from "./constants";
+import type { TechStack } from './constants';
 
-export type TypographyType = {
-  font: string;
-  weights: number[];
-}
-
-export type ProjectType = {
+export type Project = {
   id: number;
   slug: string;
   title: string;
-  description: string;
-  overview?: string;
-  technology?: TechStack[];
-  userFlow?: string[];
-  colors?: string[];
-  typography?: TypographyType;
-  screenPaths?: string[];
+  description: { text: string; features: string[] };
+  demo: {
+    text: string;
+    link: string;
+  };
+  agile: {
+    text: string;
+    link: string;
+  };
+  technologies: {
+    beforeText?: string;
+    tech: TechStack[];
+    afterText?: string;
+  };
+  acknowledgements: string;
+  license: string;
+
+  screenPaths: string[];
 };
 
-export type ProjectListType = ProjectType[];
+export type ProjectList = {
+  [key: string]: Project;
+};
 
-export type TechnologiesType = {
+export type Technology = {
   id: number;
   slug: TechStack;
   title: string;
   description: string;
   img: string;
 };
-
-export type TechnologiesListType = TechnologiesType[];
