@@ -1,0 +1,16 @@
+---
+import WorkLayout from '@layouts/WorkLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { project: 'gifter' } },
+    { params: { project: 'commenteer' } },
+    { params: { project: 'backnotes' } },
+    { params: { project: 'backnotesapi' } },
+  ];
+
+  const { project } = Astro.params;
+}
+---
+
+<WorkLayout title="Bartek Mazur - Front-end Developer" />
