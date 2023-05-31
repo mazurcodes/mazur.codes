@@ -1,3 +1,10 @@
+---
+import { technologiesData } from '@data/technologies';
+
+const { react, nextjs, typescript, expressjs, playwright, vitest } =
+  technologiesData;
+---
+
 <section class="bg-slate-50">
   <div
     class="mx-auto grid max-w-7xl justify-center gap-10 py-12 md:grid-cols-2 md:gap-28 md:px-10 md:py-36 lg:grid-cols-4 lg:grid-rows-2 lg:px-0 lg:py-56"
@@ -15,94 +22,96 @@
       class="max-w-[210px] text-center md:justify-self-center md:text-left"
     >
       <img
-        src="/assets/react-tech-icon-100.svg"
+        src={`/assets/${react.img}`}
         alt="react js logo"
         class="mx-auto md:m-0"
       />
-      <h3 class="px-2 text-2xl font-bold">React <br />UI Library</h3>
+      <h3 class="px-2 text-2xl font-bold">
+        {react.titleLine1}
+        <br />{react.titleLine2}
+      </h3>
       <p class="p-2 text-sm">
-        Building user interfaces with its component-based architecture, allowing
-        for the creation of reusable and modular UI components.
+        {react.description}
       </p>
     </article>
     <article
       class="max-w-[210px] text-center md:justify-self-center md:text-left"
     >
       <img
-        src="/assets/nextjs-tech-icon-100.svg"
+        src={`/assets/${nextjs.img}`}
         alt="next js logo"
         class="mx-auto max-h-[100px] py-2 md:m-0"
       />
       <h3 class="text-2xl font-bold">
-        Next.js
-        <br />Framework
+        {nextjs.titleLine1}
+        <br />{react.titleLine2}
       </h3>
       <p class="text-sm">
-        React metaframework used to build web applications. It provides benefits
-        such as improved performance, automatic code splitting, and simplified
-        routing
+        {nextjs.description}
       </p>
     </article>
     <article
       class="max-w-[210px] text-center md:justify-self-center md:text-left"
     >
       <img
-        src="/assets/tsjs-tech-icon.svg"
+        src={`/assets/${typescript.img}`}
         alt="typescript and javascript logos"
         class="mx-auto max-h-[100px] py-2 md:m-0"
       />
-      <h3 class="text-2xl font-bold">Typescript <br />Javascript</h3>
+      <h3 class="text-2xl font-bold">
+        {typescript.titleLine1}
+        <br />{typescript.titleLine2}
+      </h3>
       <p class="text-sm">
-        Building user interfaces with its component-based architecture, allowing
-        for the creation of reusable and modular UI components.
+        {typescript.description}
       </p>
     </article>
     <article
       class="max-w-[210px] text-center md:justify-self-center md:text-left"
     >
       <img
-        src="/assets/express-tech-icon-100.svg"
+        src={`/assets/${expressjs.img}`}
         alt="express js logo"
         class="mx-auto md:m-0"
       />
       <h3 class="text-2xl font-bold">
-        Express.js
-        <br />Backend
+        {expressjs.titleLine1}
+        <br />{expressjs.titleLine2}
       </h3>
       <p class="text-sm">
-        Building user interfaces with its component-based architecture, allowing
-        for the creation of reusable and modular UI components.
+        {expressjs.description}
       </p>
     </article>
     <article
       class="max-w-[210px] text-center md:justify-self-center md:text-left"
     >
       <img
-        src="/assets/playwright-tech-icon.svg"
+        src={`/assets/${playwright.img}`}
         alt="playwright logo"
         class="mx-auto md:m-0"
       />
-      <h3 class="text-2xl font-bold">Playwright <br />E2E Testing</h3>
+      <h3 class="text-2xl font-bold">
+        {playwright.titleLine1}
+        <br />{playwright.titleLine2}
+      </h3>
       <p class="text-sm">
-        Building user interfaces with its component-based architecture, allowing
-        for the creation of reusable and modular UI components.
+        {playwright.description}
       </p>
     </article>
     <article
       class="max-w-[210px] text-center md:justify-self-center md:text-left"
     >
       <img
-        src="/assets/vitest-tech-icon.svg"
+        src={`/assets/${vitest.img}`}
         alt="vitest logo"
         class="mx-auto md:m-0"
       />
       <h3 class="text-2xl font-bold">
-        Vitest
-        <br />Unit Testing
+        {vitest.titleLine1}
+        <br />{vitest.titleLine2}
       </h3>
       <p class="text-sm">
-        Building user interfaces with its component-based architecture, allowing
-        for the creation of reusable and modular UI components.
+        {vitest.description}
       </p>
     </article>
   </div>

@@ -29,9 +29,9 @@ export const projectsData: ProjectList = {
       tech: [
         TechStack.REACT,
         TechStack.NEXTJS,
+        TechStack.TYPESCRIPT,
         TechStack.HTML,
         TechStack.SCSS,
-        TechStack.TYPESCRIPT,
         TechStack.CYPRESS,
         TechStack.PLAYWRIGHT,
       ],
