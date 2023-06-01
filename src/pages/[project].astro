@@ -1,4 +1,5 @@
 ---
+import Logo from '@components/work/logo.astro';
 import { projectsData } from '@data/projects';
 import WorkLayout from '@layouts/WorkLayout.astro';
 
@@ -17,6 +18,8 @@ const data = project && projectsData[project];
 ---
 
 <WorkLayout title="Bartek Mazur - Front-end Developer">
+  <Logo />
+  <!-- Logo -->
   <!-- Title -->
   <!-- Demo -->
   <!-- Agile board -->
