@@ -1,0 +1,32 @@
+---
+import type { Project } from '@types';
+
+interface Props {
+  data: Project;
+}
+
+const { data } = Astro.props;
+---
+
+<section>
+  <div class="mx-auto flex max-w-[800px] items-center">
+    <div class="flex gap-5">
+      <a href={data.share.twitter} target="_blank"
+        ><img src="/assets/twitterRoundIcon.svg" /></a
+      >
+      <a href={data.share.linkedIn} target="_blank"
+        ><img src="/assets/linkedinRoundIcon.svg" /></a
+      >
+      <a href={data.share.facebook} target="_blank"
+        ><img src="/assets/facebookRoundIcon.svg" /></a
+      >
+      <a href={data.share.whatsapp} target="_blank"
+        ><img src="/assets/whatsupRoundIcon.svg" /></a
+      >
+    </div>
+    <div class="ml-5 w-40 text-sm">
+      ♥️ <strong>Liked it?</strong> Share this project and help me get my first dev
+      job.
+    </div>
+  </div>
+</section>
