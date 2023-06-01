@@ -3,7 +3,18 @@ import type { TechStack } from './constants';
 export type Project = {
   id: number;
   slug: string;
-  title: string;
+  title: {
+    text: string;
+    color: string;
+  };
+  articleHeader: string;
+  articleUnderline: string;
+  share: {
+    twitter: string;
+    linkedIn: string;
+    facebook: string;
+    whatsapp: string;
+  };
   description: { text: string; features: string[] };
   demo: {
     text: string;

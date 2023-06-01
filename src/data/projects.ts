@@ -5,7 +5,15 @@ export const projectsData: ProjectList = {
   gifter: {
     id: 1,
     slug: 'gifter',
-    title: 'Gifter',
+    title: { text: 'Gifter', color: '#E44F26' },
+    articleHeader: 'Elevate the Joy of Giving',
+    articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
+    share: {
+      twitter: 'https://twitter.com/',
+      linkedIn: 'https://twitter.com/',
+      facebook: 'https://www.facebook.com/',
+      whatsapp: 'https://www.whatsapp.com/',
+    },
     description: {
       text: "Gifter is a web application designed to simplify the process of gift-giving. It allows users to create a personalized gift wishlist and share it with friends and family. Whether it's for a birthday, wedding, holiday, or any other special occasion, Gifter makes it easy for both gift recipients and gift-givers to connect and exchange meaningful presents.",
       features: [
@@ -51,7 +59,15 @@ export const projectsData: ProjectList = {
   commenteer: {
     id: 2,
     slug: 'commenteer',
-    title: 'Commenteer',
+    title: { text: 'Commenteer', color: '#E44F26' },
+    articleHeader: 'Elevate the Joy of Giving',
+    articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
+    share: {
+      twitter: 'https://twitter.com/',
+      linkedIn: 'https://twitter.com/',
+      facebook: 'https://www.facebook.com/',
+      whatsapp: 'https://www.whatsapp.com/',
+    },
     description: {
       text: "Gifter is a web application designed to simplify the process of gift-giving. It allows users to create a personalized gift wishlist and share it with friends and family. Whether it's for a birthday, wedding, holiday, or any other special occasion, Gifter makes it easy for both gift recipients and gift-givers to connect and exchange meaningful presents.",
       features: [
@@ -97,7 +113,15 @@ export const projectsData: ProjectList = {
   backnotes: {
     id: 3,
     slug: 'backnotes',
-    title: 'BackNotes',
+    title: { text: 'BackNotes', color: '#E44F26' },
+    articleHeader: 'Elevate the Joy of Giving',
+    articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
+    share: {
+      twitter: 'https://twitter.com/',
+      linkedIn: 'https://twitter.com/',
+      facebook: 'https://www.facebook.com/',
+      whatsapp: 'https://www.whatsapp.com/',
+    },
     description: {
       text: "Gifter is a web application designed to simplify the process of gift-giving. It allows users to create a personalized gift wishlist and share it with friends and family. Whether it's for a birthday, wedding, holiday, or any other special occasion, Gifter makes it easy for both gift recipients and gift-givers to connect and exchange meaningful presents.",
       features: [
@@ -143,7 +167,15 @@ export const projectsData: ProjectList = {
   backnotesapi: {
     id: 3,
     slug: 'backnotesapi',
-    title: 'BackNotesAPI',
+    title: { text: 'BackNoteAPI', color: '#E44F26' },
+    articleHeader: 'Elevate the Joy of Giving',
+    articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
+    share: {
+      twitter: 'https://twitter.com/',
+      linkedIn: 'https://twitter.com/',
+      facebook: 'https://www.facebook.com/',
+      whatsapp: 'https://www.whatsapp.com/',
+    },
     description: {
       text: "Gifter is a web application designed to simplify the process of gift-giving. It allows users to create a personalized gift wishlist and share it with friends and family. Whether it's for a birthday, wedding, holiday, or any other special occasion, Gifter makes it easy for both gift recipients and gift-givers to connect and exchange meaningful presents.",
       features: [
