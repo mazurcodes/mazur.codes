@@ -8,7 +8,7 @@ export const technologiesData: TechList = {
     titleLine1: 'React',
     titleLine2: 'UI Library',
     description:
-      'Building user interfaces with its component-based architecture, allowing for the creation of reusable and modular UI components.',
+      'Widely-used JavaScript library for building user interfaces, offering modular components, efficient UI updates, and seamless integration with other tools and frameworks.',
     img: 'react-tech-icon-100.svg',
   },
   astro: {
@@ -17,7 +17,7 @@ export const technologiesData: TechList = {
     titleLine1: 'Astro',
     titleLine2: 'UI Library',
     description:
-      'Astro is a web framework designed for speed where we can use our favorite UI components and libraries.',
+      'Modern static site generator that combines the best of static and dynamic approaches, allowing you to build fast, interactive websites using your preferred JavaScript frameworks.',
     img: 'astro-tech-ico.svg',
   },
   html: {
@@ -26,7 +26,7 @@ export const technologiesData: TechList = {
     titleLine1: 'HTML',
     titleLine2: 'Second Line',
     description:
-      'The HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser.',
+      'The essential markup language for structuring and presenting content on the web, defining the building blocks of web pages and applications.',
     img: 'html-tech-ico.svg',
   },
   scss: {
@@ -44,7 +44,7 @@ export const technologiesData: TechList = {
     titleLine1: 'TypeScript',
     titleLine2: 'Javscript',
     description:
-      'TypeScript is a free and open source high-level programming language. It is a strict syntactical superset of JavaScript',
+      'Typed superset of JavaScript that enhances code quality, improves developer productivity, and enables seamless integration with existing JavaScript projects.',
     img: 'tsjs-tech-icon.svg',
   },
   javascript: {
@@ -53,7 +53,7 @@ export const technologiesData: TechList = {
     titleLine1: 'JavaScript',
     titleLine2: 'Second Line',
     description:
-      'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web,',
+      'The foundational language of the web, enabling interactive and dynamic functionality, and powering a wide range of applications on multiple platforms.',
     img: 'javascript-tech-ico.svg',
   },
   expressjs: {
@@ -62,7 +62,7 @@ export const technologiesData: TechList = {
     titleLine1: 'ExpressJS',
     titleLine2: 'Backend framework',
     description:
-      'Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.',
+      'Lightweight and flexible Node.js framework for building web applications and APIs, providing a simple yet powerful foundation for server-side development.',
     img: 'express-tech-icon-100.svg',
   },
   cypress: {
@@ -71,7 +71,7 @@ export const technologiesData: TechList = {
     titleLine1: 'Cypress',
     titleLine2: 'Second Line',
     description:
-      'Cypress is a next generation front end testing tool built for the modern web.',
+      'E2E testing framework for modern web applications, enabling fast and reliable testing with an intuitive API and comprehensive browser automation capabilities.',
     img: 'cypress-tech-ico.svg',
   },
   playwright: {
@@ -80,16 +80,16 @@ export const technologiesData: TechList = {
     titleLine1: 'Playwright',
     titleLine2: 'Second Line',
     description:
-      'Playwright enables reliable end-to-end testing for modern web apps.',
+      'Versatile Node.js library for automating web browsers, offering cross-platform browser automation, UI testing, and headless operation for efficient web development and testing workflows.',
     img: 'playwright-tech-icon.svg',
   },
   nextjs: {
     id: 10,
     slug: TechStack.NEXTJS,
     titleLine1: 'NextJS',
-    titleLine2: 'Second Line',
+    titleLine2: 'Metaframework',
     description:
-      'React metaframework used to build web applications. It provides benefits such as improved performance, automatic code splitting, and simplified routing',
+      'A powerful React metaframework providing server-side rendering, static site generation, and dynamic capabilities for creating scalable and performant web applications.',
     img: 'nextjs-tech-icon-100.svg',
   },
   styledcomponents: {
@@ -98,7 +98,7 @@ export const technologiesData: TechList = {
     titleLine1: 'Styled Components',
     titleLine2: 'React Styles',
     description:
-      'Styled-Components is a React-specific CSS-in-JS styling solution to write actual CSS code to style React components, as well as in React Native',
+      'Styled-Components is a CSS-in-JS library that empowers component-based styling in JavaScript, allowing easy and encapsulated styling solutions with dynamic and reusable styles.',
     img: 'styledcomponents-tech-ico.svg',
   },
   markdownit: {
@@ -106,7 +106,8 @@ export const technologiesData: TechList = {
     slug: TechStack.MARKDOWN_IT,
     titleLine1: 'Markdown-It',
     titleLine2: 'Markdown parser',
-    description: 'Markdown parser done right. Fast and easy to extend',
+    description:
+      'Fast and feature-rich Markdown parser and compiler, simplifying the creation of structured content for documentation, blogging, and other text-based applications.',
     img: 'markdown-tech-ico.svg',
   },
   redux: {
@@ -115,7 +116,7 @@ export const technologiesData: TechList = {
     titleLine1: 'Redux',
     titleLine2: 'App state',
     description:
-      'Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments, and are easy to test.',
+      'Redux is a predictable state container for JavaScript apps, enabling efficient management of application state and facilitating consistent behavior across various environments and components.',
     img: 'redux-tech-ico.svg',
   },
   vitest: {
@@ -124,7 +125,7 @@ export const technologiesData: TechList = {
     titleLine1: 'Vitest',
     titleLine2: 'Unit testing',
     description:
-      'Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments, and are easy to test.',
+      'Comprehensive testing framework for web applications, offering a rich set of testing utilities and integration with popular testing libraries to ensure reliable and high-quality code.',
     img: 'vitest-tech-icon.svg',
   },
 };
