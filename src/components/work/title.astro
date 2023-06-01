@@ -1,0 +1,19 @@
+---
+import type { Project } from '@types';
+
+interface Props {
+  data: Project;
+}
+
+const { data } = Astro.props;
+---
+
+<section>
+  <div class="mx-auto max-w-[800px]">
+    <h1 class=`text-[${data.title.color}] font-black text-4xl mb-16`>
+      {data.title.text}
+    </h1>
+    <h2 class="text-6xl font-bold">{data.articleHeader}</h2>
+    <h4 class="my-12 text-3xl">{data.articleUnderline}</h4>
+  </div>
+</section>
