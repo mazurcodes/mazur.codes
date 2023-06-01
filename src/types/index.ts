@@ -13,6 +13,10 @@ export type Project = {
     text: string;
     link: string;
   };
+  design: {
+    text: string;
+    link: string;
+  };
   technologies: {
     beforeText?: string;
     tech: TechStack[];

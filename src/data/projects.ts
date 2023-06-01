@@ -23,6 +23,10 @@ export const projectsData: ProjectList = {
       text: 'Check my Trello agile board that I use for managing tasks:',
       link: 'https://trello.com/b/9Cu5EkjO/gifter-app',
     },
+    design: {
+      text: 'Check my design at Figma',
+      link: 'https://www.figma.com',
+    },
     technologies: {
       beforeText:
         'Gifter incorporates a variety of technologies and testing libraries to provide a dynamic and efficient gift-sharing platform. The key technologies and testing libraries used in this project include:',
@@ -64,6 +68,10 @@ export const projectsData: ProjectList = {
     agile: {
       text: 'Check my Trello agile board that I use for managing tasks:',
       link: 'https://trello.com/b/9Cu5EkjO/gifter-app',
+    },
+    design: {
+      text: 'Check my design at Figma',
+      link: 'https://www.figma.com',
     },
     technologies: {
       beforeText:
@@ -107,6 +115,10 @@ export const projectsData: ProjectList = {
       text: 'Check my Trello agile board that I use for managing tasks:',
       link: 'https://trello.com/b/9Cu5EkjO/gifter-app',
     },
+    design: {
+      text: 'Check my design at Figma',
+      link: 'https://www.figma.com',
+    },
     technologies: {
       beforeText:
         'Gifter incorporates a variety of technologies and testing libraries to provide a dynamic and efficient gift-sharing platform. The key technologies and testing libraries used in this project include:',
@@ -148,6 +160,10 @@ export const projectsData: ProjectList = {
     agile: {
       text: 'Check my Trello agile board that I use for managing tasks:',
       link: 'https://trello.com/b/9Cu5EkjO/gifter-app',
+    },
+    design: {
+      text: 'Check my design at Figma',
+      link: 'https://www.figma.com',
     },
     technologies: {
       beforeText:
