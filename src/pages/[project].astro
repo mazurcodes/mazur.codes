@@ -1,10 +1,13 @@
 ---
+import Acknowledgements from '@components/work/Acknowledgements.astro';
+import AppViews from '@components/work/AppViews.astro';
 import Demo from '@components/work/Demo.astro';
 import Design from '@components/work/Design.astro';
+import License from '@components/work/License.astro';
 import Tasks from '@components/work/Tasks.astro';
 import Technologies from '@components/work/Technologies.astro';
 import Description from '@components/work/description.astro';
-import ImgLarge from '@components/work/imgLarge.astro';
+import ImgLarge from '@components/work/ImgLarge.astro';
 import Logo from '@components/work/logo.astro';
 import Share from '@components/work/share.astro';
 import Title from '@components/work/title.astro';
@@ -29,15 +32,14 @@ const data = projectsData[project!];
   <Logo />
   <Title data={data} />
   <Share data={data} />
-  <ImgLarge />
+  <ImgLarge url="/assets/img-gifter-main-800.png" />
   <Description data={data} />
+  <Technologies data={data} />
   <Demo data={data} />
-  <ImgLarge />
+  <ImgLarge url="/assets/img-gifter-list-800.png" />
   <Tasks data={data} />
   <Design data={data} />
-  <Technologies data={data} />
-  <!-- Technologies -->
-  <!-- Acknowledgements -->
-  <!-- License -->
-  <!-- Images -->
+  <Acknowledgements data={data} />
+  <License data={data} />
+  <AppViews data={data} />
 </WorkLayout>
