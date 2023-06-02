@@ -1,0 +1,67 @@
+---
+import type { Project } from '@types';
+import Article from './article.astro';
+
+interface Props {
+  data: Project;
+}
+
+const { data } = Astro.props;
+---
+
+<section>
+  <div
+    class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]"
+  >
+    <Article header="Graphics" title="App views" />
+    <div class="flex flex-wrap justify-between gap-[50px]">
+      <img
+        src="/assets/img-gifter-main-menu-800.png"
+        alt="Gifter app dashboard"
+      />
+      <img
+        src="/assets/img-gifter-auth-signup-800.png"
+        alt="Gifter app dashboard"
+        class="w-[370px]"
+      />
+      <img
+        src="/assets/img-gifter-auth-login-800.png"
+        alt="Gifter app dashboard"
+        class="w-[370px]"
+      />
+      <img
+        src="/assets/img-gifter-auth-reset-800.png"
+        alt="Gifter app dashboard"
+        class="w-[370px]"
+      />
+      <img
+        src="/assets/img-gifter-dashboard-800.png"
+        alt="Gifter app dashboard"
+      />
+      <img
+        src="/assets/img-gifter-dashboard-mobile-general-800.png"
+        alt="Gifter app dashboard"
+        class="w-[370px]"
+      />
+      <img
+        src="/assets/img-gifter-dashboard-mobile-email-800.png"
+        alt="Gifter app dashboard"
+        class="w-[370px]"
+      />
+      <img
+        src="/assets/img-gifter-dashboard-mobile-password-800.png"
+        alt="Gifter app dashboard"
+        class="w-[370px]"
+      />
+      <img
+        src="/assets/img-gifter-dashboard-mobile-delete-800.png"
+        alt="Gifter app dashboard"
+        class="w-[370px]"
+      />
+      <img
+        src="/assets/img-gifter-dashboard-delete-800.png"
+        alt="Gifter app dashboard"
+      />
+    </div>
+  </div>
+</section>

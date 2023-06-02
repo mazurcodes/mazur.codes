@@ -1,0 +1,18 @@
+---
+import type { Project } from '@types';
+import Article from './article.astro';
+
+interface Props {
+  data: Project;
+}
+
+const { data } = Astro.props;
+---
+
+<section>
+  <div
+    class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]"
+  >
+    <Article header="Legal" title="License" text={data.license} />
+  </div>
+</section>
