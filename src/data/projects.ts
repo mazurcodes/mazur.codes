@@ -28,7 +28,7 @@ export const projectsData: ProjectList = {
       link: 'https://gifter-next13.vercel.app/',
     },
     agile: {
-      text: 'Check my Trello agile board that I use for managing tasks:',
+      text: 'Check my Trello agile board that I use for managing tasks and track progression.',
       link: 'https://trello.com/b/9Cu5EkjO/gifter-app',
     },
     design: {

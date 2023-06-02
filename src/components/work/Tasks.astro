@@ -7,18 +7,17 @@ interface Props {
 }
 
 const { data } = Astro.props;
-
-const text = `${data.demo.text} <a href="${data.demo.link}"}>Link</a>`;
 ---
 
 <section>
   <div class="mx-auto mt-[100px] max-w-[800px]">
-    <Article header="Demo" title="Gifter on Vercel" />
+    <Article header="Tasks" title="Agile Board on Trello" />
     <p class="py-8">
-      {data.demo.text}
+      {data.agile.text}
     </p>
-    <a href={data.demo.link} target="_blank" class="underline"
-      >Link to website</a
+    <a href={data.agile.link} target="_blank" class="underline"
+      >Link to Trello</a
     >
+    <img src="/assets/dummyImgSmall.png" alt="" class="mt-10" />
   </div>
 </section>

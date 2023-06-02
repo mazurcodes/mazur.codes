@@ -1,5 +1,6 @@
 ---
 import Demo from '@components/work/Demo.astro';
+import Tasks from '@components/work/Tasks.astro';
 import Description from '@components/work/description.astro';
 import ImgLarge from '@components/work/imgLarge.astro';
 import Logo from '@components/work/logo.astro';
@@ -30,6 +31,7 @@ const data = projectsData[project!];
   <Description data={data} />
   <Demo data={data} />
   <ImgLarge />
+  <Tasks data={data} />
   <!-- Design -->
   <!-- Agile board -->
   <!-- License -->
