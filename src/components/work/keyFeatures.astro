@@ -1,0 +1,16 @@
+---
+import type { Project } from '@types';
+
+interface Props {
+  features: string[];
+}
+
+const { features } = Astro.props;
+---
+
+<section>
+  <h2 class="text-2xl font-bold">Key Features</h2>
+  <ul class="mt-3 pl-10">
+    {features.map((feature) => <li class="list-disc py-3">{feature}</li>)}
+  </ul>
+</section>

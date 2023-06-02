@@ -1,0 +1,22 @@
+---
+import type { Project } from '@types';
+import Article from './article.astro';
+import KeyFeatures from './keyFeatures.astro';
+
+interface Props {
+  data: Project;
+}
+
+const { data } = Astro.props;
+---
+
+<section>
+  <div class="mx-auto mt-[100px] max-w-[800px]">
+    <Article
+      header="Description"
+      title="About this project"
+      text={data.description.text}
+    />
+    <KeyFeatures features={data.description.features} />
+  </div>
+</section>
