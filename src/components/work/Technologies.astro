@@ -1,0 +1,40 @@
+---
+import type { Project } from '@types';
+import Article from './article.astro';
+import { technologiesData } from '@data/technologies';
+
+interface Props {
+  data: Project;
+}
+
+const { data } = Astro.props;
+---
+
+<section>
+  <div class="mx-auto mt-[100px] max-w-[800px]">
+    <Article header="Tech" title="Technologies Used" />
+    <p class="py-8">{data.technologies.beforeText}</p>
+    <ul>
+      {
+        data.technologies.tech.map((tech) => {
+          return (
+            <div class="flex items-center py-5">
+              <div class="grid h-[50px] w-[50px] place-items-center">
+                {technologiesData[tech].img && (
+                  <img
+                    src={`/assets/${technologiesData[tech].img}`}
+                    alt={`${tech} icon`}
+                  />
+                )}
+              </div>
+              <li class="ml-14 list-disc">
+                {technologiesData[tech].titleLine1}
+              </li>
+            </div>
+          );
+        })
+      }
+    </ul>
+    <p class="py-8">{data.technologies.afterText}</p>
+  </div>
+</section>

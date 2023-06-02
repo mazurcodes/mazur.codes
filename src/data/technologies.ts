@@ -27,7 +27,7 @@ export const technologiesData: TechList = {
     titleLine2: 'Second Line',
     description:
       'The essential markup language for structuring and presenting content on the web, defining the building blocks of web pages and applications.',
-    img: 'html-tech-ico.svg',
+    img: 'html-tech-icon.svg',
   },
   scss: {
     id: 4,
@@ -36,7 +36,7 @@ export const technologiesData: TechList = {
     titleLine2: 'Second Line',
     description:
       'Sassy Cascading Style Sheets or SCSS is a superset of the CSS language that allows web designers more freedom and control when designing web designs by adding new features to CSS.',
-    img: 'scss-tech-ico.svg',
+    img: 'scss-tech-icon.svg',
   },
   typescript: {
     id: 5,
@@ -72,7 +72,7 @@ export const technologiesData: TechList = {
     titleLine2: 'Second Line',
     description:
       'E2E testing framework for modern web applications, enabling fast and reliable testing with an intuitive API and comprehensive browser automation capabilities.',
-    img: 'cypress-tech-ico.svg',
+    img: 'cypress-tech-icon.svg',
   },
   playwright: {
     id: 9,

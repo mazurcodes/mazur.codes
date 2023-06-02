@@ -1,0 +1,23 @@
+---
+import type { Project } from '@types';
+import Article from './article.astro';
+
+interface Props {
+  data: Project;
+}
+
+const { data } = Astro.props;
+---
+
+<section>
+  <div class="mx-auto mt-[100px] max-w-[800px]">
+    <Article header="Design" title="Design on Figma" />
+    <p class="py-8">
+      {data.design.text}
+    </p>
+    <a href={data.design.link} target="_blank" class="underline"
+      >Link to Figma</a
+    >
+    <img src="/assets/dummyImgSmall.png" alt="" class="mt-10" />
+  </div>
+</section>

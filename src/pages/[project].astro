@@ -1,6 +1,8 @@
 ---
 import Demo from '@components/work/Demo.astro';
+import Design from '@components/work/Design.astro';
 import Tasks from '@components/work/Tasks.astro';
+import Technologies from '@components/work/Technologies.astro';
 import Description from '@components/work/description.astro';
 import ImgLarge from '@components/work/imgLarge.astro';
 import Logo from '@components/work/logo.astro';
@@ -32,12 +34,10 @@ const data = projectsData[project!];
   <Demo data={data} />
   <ImgLarge />
   <Tasks data={data} />
-  <!-- Design -->
-  <!-- Agile board -->
-  <!-- License -->
-  <!-- Picture of app -->
-  <!-- Picture of trello -->
+  <Design data={data} />
+  <Technologies data={data} />
   <!-- Technologies -->
   <!-- Acknowledgements -->
+  <!-- License -->
   <!-- Images -->
 </WorkLayout>
