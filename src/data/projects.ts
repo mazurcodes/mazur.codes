@@ -50,8 +50,11 @@ export const projectsData: ProjectList = {
       afterText:
         "These technologies, along with the testing libraries, collectively contribute to Gifter's functionality, security, real-time updates, and user-friendly interface. By leveraging these tools, I've managed to ensure the reliability and quality of this application.",
     },
-    acknowledgements:
-      'Special thanks to <a href="https://github.com/emeczku" _target="blank">Przemek Majewski</a> for his valuable contributions to the development of Gifter. His assistance in identifying and resolving bugs was instrumental in improving the overall appearance and functionality of the application.',
+    acknowledgements: {
+      text: 'Special thanks to Przemek Majewski for his valuable contributions to the development of Gifter. His assistance in identifying and resolving bugs was instrumental in improving the overall appearance and functionality of the application.',
+      links: [{ name: 'Przemek Majewski', link: 'https://github.com/emeczku' }],
+    },
+
     license: 'This project is licensed under the MIT License.',
 
     screenPaths: ['@assets/gifter-01.png'],
@@ -60,7 +63,7 @@ export const projectsData: ProjectList = {
     id: 2,
     slug: 'commenteer',
     title: { text: 'Commenteer', color: '#E44F26' },
-    articleHeader: 'Elevate the Joy of Giving',
+    articleHeader: 'This is a commenteer article',
     articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
     share: {
       twitter: 'https://twitter.com/',

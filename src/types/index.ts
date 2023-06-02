@@ -33,7 +33,7 @@ export type Project = {
     tech: TechStack[];
     afterText?: string;
   };
-  acknowledgements: string;
+  acknowledgements: { text: string; links: { name: string; link: string }[] };
   license: string;
 
   screenPaths: string[];
