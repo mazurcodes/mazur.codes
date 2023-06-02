@@ -1,4 +1,5 @@
 ---
+import ImgLarge from '@components/work/imgLarge.astro';
 import Logo from '@components/work/logo.astro';
 import Share from '@components/work/share.astro';
 import Title from '@components/work/title.astro';
@@ -23,6 +24,7 @@ const data = projectsData[project!];
   <Logo />
   <Title data={data} />
   <Share data={data} />
+  <ImgLarge />
   <!-- Demo -->
   <!-- Agile board -->
   <!-- License -->
