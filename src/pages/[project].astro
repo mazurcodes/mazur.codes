@@ -1,4 +1,5 @@
 ---
+import Demo from '@components/work/Demo.astro';
 import Description from '@components/work/description.astro';
 import ImgLarge from '@components/work/imgLarge.astro';
 import Logo from '@components/work/logo.astro';
@@ -27,11 +28,11 @@ const data = projectsData[project!];
   <Share data={data} />
   <ImgLarge />
   <Description data={data} />
-  <!-- Description with Key Features-->
-  <!-- Demo -->
+  <Demo data={data} />
+  <ImgLarge />
+  <!-- Design -->
   <!-- Agile board -->
   <!-- License -->
-  <!-- Design -->
   <!-- Picture of app -->
   <!-- Picture of trello -->
   <!-- Technologies -->

@@ -4,7 +4,7 @@ import type { Project } from '@types';
 interface Props {
   header: string;
   title: string;
-  text: string;
+  text?: string;
 }
 
 const { header, title, text } = Astro.props;
@@ -13,5 +13,5 @@ const { header, title, text } = Astro.props;
 <article>
   <h3 class="font-bold text-[#AFAFAF]">{header}</h3>
   <h2 class="mt-4 text-4xl font-bold">{title}</h2>
-  <p class="li py-8 leading-8">{text}</p>
+  {text && <p class="li py-8 leading-8">{text}</p>}
 </article>
