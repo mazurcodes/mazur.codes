@@ -9,8 +9,8 @@ const { data } = Astro.props;
 ---
 
 <section>
-  <div class="mx-auto max-w-[800px]">
-    <h1 class=`text-[${data.title.color}] font-black text-4xl mb-16`>
+  <div class="mx-auto max-w-[260px] md:max-w-[600px] lg:max-w-[800px]">
+    <h1 class={`text-[${data.title.color}] font-black text-4xl mb-16`}>
       {data.title.text}
     </h1>
     <h2 class="text-6xl font-bold">{data.articleHeader}</h2>

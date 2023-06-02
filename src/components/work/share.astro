@@ -9,7 +9,9 @@ const { data } = Astro.props;
 ---
 
 <section>
-  <div class="mx-auto mt-[100px] flex max-w-[800px] items-center">
+  <div
+    class="mx-auto mt-[100px] flex max-w-[260px] items-center md:max-w-[600px] lg:max-w-[800px]"
+  >
     <div class="flex gap-5">
       <a href={data.share.twitter} target="_blank"
         ><img src="/assets/twitterRoundIcon.svg" /></a
@@ -25,8 +27,8 @@ const { data } = Astro.props;
       >
     </div>
     <div class="ml-5 w-40 text-sm">
-      ♥️ <strong>Liked it?</strong> Share this project and help me get my first dev
-      job.
+      <strong>Liked it?</strong> Share this project and help me get my first dev
+      job ♥️
     </div>
   </div>
 </section>

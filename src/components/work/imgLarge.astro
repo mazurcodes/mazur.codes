@@ -1,5 +1,13 @@
+---
+interface Props {
+  url: string;
+}
+
+const { url } = Astro.props;
+---
+
 <section>
-  <div class="mx-auto max-w-[800px]">
-    <img src="/assets/dummyImgLarge.png" alt="" class="mt-[50px]" />
+  <div class="mx-auto max-w-[260px] md:max-w-[600px] lg:max-w-[800px]">
+    <img src={url} alt="" class="mt-[50px]" />
   </div>
 </section>

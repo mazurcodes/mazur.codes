@@ -11,9 +11,11 @@ const { data } = Astro.props;
 ---
 
 <section>
-  <div class="mx-auto mt-[100px] max-w-[800px]">
+  <div
+    class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]"
+  >
     <Article header="Tech" title="Technologies Used" />
-    <p class="py-8">{data.technologies.beforeText}</p>
+    <p class="py-8 leading-8">{data.technologies.beforeText}</p>
     <ul>
       {
         data.technologies.tech.map((tech) => {
@@ -35,6 +37,6 @@ const { data } = Astro.props;
         })
       }
     </ul>
-    <p class="py-8">{data.technologies.afterText}</p>
+    <p class="py-8 leading-8">{data.technologies.afterText}</p>
   </div>
 </section>

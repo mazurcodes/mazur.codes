@@ -10,7 +10,9 @@ const { data } = Astro.props;
 ---
 
 <section>
-  <div class="mx-auto mt-[100px] max-w-[800px]">
+  <div
+    class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]"
+  >
     <Article header="Tasks" title="Agile Board on Trello" />
     <p class="py-8">
       {data.agile.text}
@@ -18,6 +20,10 @@ const { data } = Astro.props;
     <a href={data.agile.link} target="_blank" class="underline"
       >Link to Trello</a
     >
-    <img src="/assets/dummyImgSmall.png" alt="" class="mt-10" />
+    <img
+      src="/assets/img-gifter-trello-small-800.png"
+      alt="hello"
+      class="mt-10"
+    />
   </div>
 </section>
