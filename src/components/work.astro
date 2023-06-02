@@ -1,4 +1,7 @@
 ---
+import { projectsData } from '@data/projects';
+
+const { gifter, commenteer, backnotes, backnotesapi } = projectsData;
 ---
 
 <section class="work bg-slate-50 py-24">
@@ -8,17 +11,14 @@
     >
       <div class="text-side flex-1">
         <h3 class="text-lg font-bold md:text-3xl">
-          Ace your next UX job inteview
+          {gifter.articleHeader}
         </h3>
         <h2 class="py-6 text-3xl font-black md:text-7xl">
           <span class="text-7xl text-orange-600 md:text-9xl"> Gifter</span><br
           />Meaningfull presents
         </h2>
         <p class="pb-14 pt-3">
-          Whiteboard Challenges can be a source of great angst for many new or
-          even experienced UX designers. But they don’t have to be. Get access
-          to 10 solved exercises Guide Template Wireframe Library with +30
-          components to help you ace them in your next UX Job Interview.
+          {gifter.description.text}
         </p>
         <a href="/gifter" class="rounded-full bg-slate-600 px-6 py-3 text-white"
           >Any wishes?</a
