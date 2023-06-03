@@ -36,7 +36,7 @@ export type Project = {
   acknowledgements: { text: string; links: { name: string; link: string }[] };
   license: string;
 
-  screenPaths: string[];
+  images: { id: string; alt: string; path: string }[];
 };
 
 export type ProjectList = {

@@ -57,13 +57,84 @@ export const projectsData: ProjectList = {
 
     license: 'This project is licensed under the MIT License.',
 
-    screenPaths: ['@assets/gifter-01.png'],
+    images: [
+      {
+        id: '1d',
+        alt: 'gifter app on mobile, tablet and desktop screens',
+        path: '/assets/GifterImageSide.png',
+      },
+      {
+        id: '2d',
+        alt: 'gifter app main page',
+        path: '/assets/img-gifter-main-800.png',
+      },
+      {
+        id: '3d',
+        alt: 'gifter app list screen',
+        path: '/assets/img-gifter-list-800.png',
+      },
+      {
+        id: '4d',
+        alt: 'trello board with gifter app tasks',
+        path: '/assets/img-gifter-trello-small-800.png',
+      },
+      {
+        id: '5d',
+        alt: 'figma with gifter design',
+        path: '/assets/img-gifter-figma-800.png',
+      },
+      {
+        id: '6d',
+        alt: 'gifter app main page menu screen',
+        path: '/assets/img-gifter-main-menu-800.png',
+      },
+      {
+        id: '7d',
+        alt: 'gifter app signup screen',
+        path: '/assets/img-gifter-auth-signup-800.png',
+      },
+      {
+        id: '8d',
+        alt: 'gifter app login screen',
+        path: '/assets/img-gifter-auth-login-800.png',
+      },
+      {
+        id: '9d',
+        alt: 'gifter app reset password screen',
+        path: '/assets/img-gifter-auth-reset-800.png',
+      },
+      {
+        id: '10d',
+        alt: 'gifter app dashboard screen',
+        path: '/assets/img-gifter-dashboard-800.png',
+      },
+      {
+        id: '11d',
+        alt: 'gifter app dashboard general mobile screen',
+        path: '/assets/img-gifter-dashboard-mobile-general-800.png',
+      },
+      {
+        id: '12d',
+        alt: 'gifter app dashboard email mobile screen',
+        path: '/assets/img-gifter-dashboard-mobile-email-800.png',
+      },
+      {
+        id: '13d',
+        alt: 'gifter app dashboard delete mobile screen',
+        path: '/assets/img-gifter-dashboard-mobile-delete-800.png',
+      },
+      {
+        id: '14d',
+        alt: 'gifter app dashboard delete screen',
+        path: '/assets/img-gifter-dashboard-delete-800.png',
+      },
+    ],
   },
   commenteer: {
-    id: 2,
-    slug: 'commenteer',
-    title: { text: 'Commenteer', color: '#E44F26' },
-    articleHeader: 'This is a commenteer article',
+    id: 1,
+    slug: 'gifter',
+    title: { text: 'Gifter', color: '#E44F26' },
+    articleHeader: 'Elevate the Joy of Giving',
     articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
     share: {
       twitter: 'https://twitter.com/',
@@ -85,7 +156,7 @@ export const projectsData: ProjectList = {
       link: 'https://gifter-next13.vercel.app/',
     },
     agile: {
-      text: 'Check my Trello agile board that I use for managing tasks:',
+      text: 'Check my Trello agile board that I use for managing tasks and track progression.',
       link: 'https://trello.com/b/9Cu5EkjO/gifter-app',
     },
     design: {
@@ -98,25 +169,28 @@ export const projectsData: ProjectList = {
       tech: [
         TechStack.REACT,
         TechStack.NEXTJS,
+        TechStack.TYPESCRIPT,
         TechStack.HTML,
         TechStack.SCSS,
-        TechStack.TYPESCRIPT,
         TechStack.CYPRESS,
         TechStack.PLAYWRIGHT,
       ],
       afterText:
         "These technologies, along with the testing libraries, collectively contribute to Gifter's functionality, security, real-time updates, and user-friendly interface. By leveraging these tools, I've managed to ensure the reliability and quality of this application.",
     },
-    acknowledgements:
-      'Special thanks to <a href="https://github.com/emeczku" _target="blank">Przemek Majewski</a> for his valuable contributions to the development of Gifter. His assistance in identifying and resolving bugs was instrumental in improving the overall appearance and functionality of the application.',
+    acknowledgements: {
+      text: 'Special thanks to Przemek Majewski for his valuable contributions to the development of Gifter. His assistance in identifying and resolving bugs was instrumental in improving the overall appearance and functionality of the application.',
+      links: [{ name: 'Przemek Majewski', link: 'https://github.com/emeczku' }],
+    },
+
     license: 'This project is licensed under the MIT License.',
 
     screenPaths: ['@assets/gifter-01.png'],
   },
   backnotes: {
-    id: 3,
-    slug: 'backnotes',
-    title: { text: 'BackNotes', color: '#E44F26' },
+    id: 1,
+    slug: 'gifter',
+    title: { text: 'Gifter', color: '#E44F26' },
     articleHeader: 'Elevate the Joy of Giving',
     articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
     share: {
@@ -139,7 +213,7 @@ export const projectsData: ProjectList = {
       link: 'https://gifter-next13.vercel.app/',
     },
     agile: {
-      text: 'Check my Trello agile board that I use for managing tasks:',
+      text: 'Check my Trello agile board that I use for managing tasks and track progression.',
       link: 'https://trello.com/b/9Cu5EkjO/gifter-app',
     },
     design: {
@@ -152,25 +226,28 @@ export const projectsData: ProjectList = {
       tech: [
         TechStack.REACT,
         TechStack.NEXTJS,
+        TechStack.TYPESCRIPT,
         TechStack.HTML,
         TechStack.SCSS,
-        TechStack.TYPESCRIPT,
         TechStack.CYPRESS,
         TechStack.PLAYWRIGHT,
       ],
       afterText:
         "These technologies, along with the testing libraries, collectively contribute to Gifter's functionality, security, real-time updates, and user-friendly interface. By leveraging these tools, I've managed to ensure the reliability and quality of this application.",
     },
-    acknowledgements:
-      'Special thanks to <a href="https://github.com/emeczku" _target="blank">Przemek Majewski</a> for his valuable contributions to the development of Gifter. His assistance in identifying and resolving bugs was instrumental in improving the overall appearance and functionality of the application.',
+    acknowledgements: {
+      text: 'Special thanks to Przemek Majewski for his valuable contributions to the development of Gifter. His assistance in identifying and resolving bugs was instrumental in improving the overall appearance and functionality of the application.',
+      links: [{ name: 'Przemek Majewski', link: 'https://github.com/emeczku' }],
+    },
+
     license: 'This project is licensed under the MIT License.',
 
     screenPaths: ['@assets/gifter-01.png'],
   },
   backnotesapi: {
-    id: 3,
-    slug: 'backnotesapi',
-    title: { text: 'BackNoteAPI', color: '#E44F26' },
+    id: 1,
+    slug: 'gifter',
+    title: { text: 'Gifter', color: '#E44F26' },
     articleHeader: 'Elevate the Joy of Giving',
     articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
     share: {
@@ -193,7 +270,7 @@ export const projectsData: ProjectList = {
       link: 'https://gifter-next13.vercel.app/',
     },
     agile: {
-      text: 'Check my Trello agile board that I use for managing tasks:',
+      text: 'Check my Trello agile board that I use for managing tasks and track progression.',
       link: 'https://trello.com/b/9Cu5EkjO/gifter-app',
     },
     design: {
@@ -206,17 +283,20 @@ export const projectsData: ProjectList = {
       tech: [
         TechStack.REACT,
         TechStack.NEXTJS,
+        TechStack.TYPESCRIPT,
         TechStack.HTML,
         TechStack.SCSS,
-        TechStack.TYPESCRIPT,
         TechStack.CYPRESS,
         TechStack.PLAYWRIGHT,
       ],
       afterText:
         "These technologies, along with the testing libraries, collectively contribute to Gifter's functionality, security, real-time updates, and user-friendly interface. By leveraging these tools, I've managed to ensure the reliability and quality of this application.",
     },
-    acknowledgements:
-      'Special thanks to <a href="https://github.com/emeczku" _target="blank">Przemek Majewski</a> for his valuable contributions to the development of Gifter. His assistance in identifying and resolving bugs was instrumental in improving the overall appearance and functionality of the application.',
+    acknowledgements: {
+      text: 'Special thanks to Przemek Majewski for his valuable contributions to the development of Gifter. His assistance in identifying and resolving bugs was instrumental in improving the overall appearance and functionality of the application.',
+      links: [{ name: 'Przemek Majewski', link: 'https://github.com/emeczku' }],
+    },
+
     license: 'This project is licensed under the MIT License.',
 
     screenPaths: ['@assets/gifter-01.png'],
