@@ -1,0 +1,38 @@
+---
+import Article from './Article.astro';
+
+interface Props {
+  github: { link?: string | undefined };
+  agile: { link?: string | undefined };
+  design: { link?: string | undefined };
+}
+
+const { agile, github, design } = Astro.props;
+---
+
+<section>
+  <div
+    class="mx-auto mt-[20px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]"
+  >
+    <div class="flex items-center pb-3">
+      <p class="text-xs">Quick links:</p>
+      <a
+        href={github.link}
+        class="mx-1 p-2 text-xs italic text-gray-400 hover:text-gray-600"
+        >Github</a
+      >
+      <a
+        href={agile.link}
+        class="p-2 text-xs italic text-gray-400 hover:text-gray-600"
+      >
+        Agile</a
+      >
+      <a
+        href={design.link}
+        class="ml-1 p-2 text-xs italic text-gray-400 hover:text-gray-600"
+      >
+        Design</a
+      >
+    </div>
+  </div>
+</section>

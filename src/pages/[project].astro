@@ -6,24 +6,23 @@ import Design from '@components/work/Design.astro';
 import License from '@components/work/License.astro';
 import Tasks from '@components/work/Tasks.astro';
 import Technologies from '@components/work/Technologies.astro';
-import Description from '@components/work/description.astro';
+import Description from '@components/work/Description.astro';
 import ImgLarge from '@components/work/ImgLarge.astro';
-import Logo from '@components/work/logo.astro';
+import Logo from '@components/work/Logo.astro';
 import Share from '@components/work/Share.astro';
 import Title from '@components/work/Title.astro';
 import { projectsData } from '@data/projects';
 import WorkLayout from '@layouts/WorkLayout.astro';
+import Links from '@components/work/Links.astro';
 
 export function getStaticPaths() {
   return [
     { params: { project: 'gifter' } },
-    // { params: { project: 'commenteer' } },
-    // { params: { project: 'backnotes' } },
-    // { params: { project: 'backnotesapi' } },
+    { params: { project: 'commenteer' } },
+    // { params: { work: 'backnotes' } },
+    // { params: { work: 'backnotesapi' } },
   ];
 }
-
-const { project } = Astro.params;
 
 const {
   acknowledgements,
@@ -34,24 +33,25 @@ const {
   images,
   license,
   share,
-  slug,
+  github,
   technologies,
   title,
-} = projectsData[project!];
+} = projectsData[Astro.params.project!]; // TODO check if Astro fixed this issue with {project} = Astro.props
 ---
 
-<WorkLayout title="Bartek Mazur - Front-end Developer">
+<WorkLayout title={`Bartek Mazur - ${title.text} project`}>
   <Logo />
   <Title data={title} />
   <Share data={share} />
-  <ImgLarge url="/assets/img-gifter-main-800.png" />
+  <Links agile={agile} design={design} github={github} />
+  <ImgLarge data={images.article[0]} />
   <Description data={description} />
   <Technologies data={technologies} />
   <Demo data={demo} />
-  <ImgLarge url="/assets/img-gifter-list-800.png" />
-  <Tasks data={agile} />
-  <Design data={design} />
-  <Acknowledgements data={acknowledgements} />
+  <ImgLarge data={images.article[1]} />
+  {agile && <Tasks data={{ agile, image: images.agile }} />}
+  {design && <Design data={{ design, image: images.design }} />}
+  {acknowledgements && <Acknowledgements data={acknowledgements} />}
   <License data={license} />
-  <AppViews data={images} />
+  <AppViews data={images.views} />
 </WorkLayout>
