@@ -2,18 +2,21 @@
 import type { Project } from '@types';
 
 interface Props {
-  data: Project;
+  text: string;
+  color: string;
+  articleHeader: string;
+  articleUnderline: string;
 }
 
-const { data } = Astro.props;
+const { text, color, articleHeader, articleUnderline } = Astro.props;
 ---
 
 <section>
   <div class="mx-auto max-w-[260px] md:max-w-[600px] lg:max-w-[800px]">
-    <h1 class={`text-[${data.title.color}] font-black text-4xl mb-16`}>
-      {data.title.text}
+    <h1 class={`text-[${color}] font-black text-4xl mb-16`}>
+      {text}
     </h1>
-    <h2 class="text-5xl font-bold md:text-6xl">{data.articleHeader}</h2>
-    <h4 class="my-12 text-2xl md:text-3xl">{data.articleUnderline}</h4>
+    <h2 class="text-5xl font-bold md:text-6xl">{articleHeader}</h2>
+    <h4 class="my-12 text-2xl md:text-3xl">{articleUnderline}</h4>
   </div>
 </section>

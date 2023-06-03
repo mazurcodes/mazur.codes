@@ -25,21 +25,33 @@ export function getStaticPaths() {
 
 const { project } = Astro.params;
 
-const data = projectsData[project!];
+const {
+  acknowledgements,
+  agile,
+  demo,
+  description,
+  design,
+  images,
+  license,
+  share,
+  slug,
+  technologies,
+  title,
+} = projectsData[project!];
 ---
 
 <WorkLayout title="Bartek Mazur - Front-end Developer">
   <Logo />
-  <Title data={data} />
-  <Share data={data} />
+  <Title data={title} />
+  <Share data={share} />
   <ImgLarge url="/assets/img-gifter-main-800.png" />
-  <Description data={data} />
-  <Technologies data={data} />
-  <Demo data={data} />
+  <Description data={description} />
+  <Technologies data={technologies} />
+  <Demo data={demo} />
   <ImgLarge url="/assets/img-gifter-list-800.png" />
-  <Tasks data={data} />
-  <Design data={data} />
-  <Acknowledgements data={data} />
-  <License data={data} />
-  <AppViews data={data} />
+  <Tasks data={agile} />
+  <Design data={design} />
+  <Acknowledgements data={acknowledgements} />
+  <License data={license} />
+  <AppViews data={images} />
 </WorkLayout>
