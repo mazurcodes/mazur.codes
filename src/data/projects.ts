@@ -12,7 +12,9 @@ export const projectsData: ProjectList = {
       articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
     },
     share: {
-      twitter: 'https://twitter.com/',
+      twitter: encodeURI(
+        'https://twitter.com/share?url=https://mazur.codes/&title=Check this out: \nBartek Mazur - Front-end Developer&summary='
+      ),
       linkedIn: 'https://twitter.com/',
       facebook: 'https://www.facebook.com/',
       whatsapp: 'https://www.whatsapp.com/',
@@ -45,13 +47,14 @@ export const projectsData: ProjectList = {
       beforeText:
         'Gifter incorporates a variety of technologies and testing libraries to provide a dynamic and efficient gift-sharing platform. The key technologies and testing libraries used in this project include:',
       tech: [
-        TechStack.REACT,
         TechStack.NEXTJS,
+        TechStack.REACT,
         TechStack.TYPESCRIPT,
-        TechStack.HTML,
-        TechStack.SCSS,
-        TechStack.CYPRESS,
-        TechStack.PLAYWRIGHT,
+        TechStack.FIREBASE,
+        TechStack.REACTFIREBASEHOOKS,
+        TechStack.REACTHOOKFORM,
+        TechStack.TAILWINDCSS,
+        TechStack.VITEST,
       ],
       afterText:
         "These technologies, along with the testing libraries, collectively contribute to Gifter's functionality, security, real-time updates, and user-friendly interface. By leveraging these tools, I've managed to ensure the reliability and quality of this application.",
@@ -183,13 +186,14 @@ export const projectsData: ProjectList = {
       beforeText:
         'Technologies that ensure Commenteer delivers a performant, secure, and user-friendly experience for media creators:',
       tech: [
-        TechStack.REACT,
         TechStack.NEXTJS,
+        TechStack.REACT,
         TechStack.TYPESCRIPT,
+        TechStack.FIREBASE,
+        TechStack.REACTFIREBASEHOOKS,
+        TechStack.VITEST,
         TechStack.HTML,
         TechStack.SCSS,
-        TechStack.CYPRESS,
-        TechStack.PLAYWRIGHT,
       ],
       afterText:
         "By leveraging these tools, I've managed to ensure the reliability and quality of this application.",
@@ -280,7 +284,7 @@ export const projectsData: ProjectList = {
       whatsapp: 'https://www.whatsapp.com/',
     },
     description: {
-      text: '',
+      text: 'Commenteer is an application specifically designed for media creators to simplify the process of generating multiple comments for their content. It leverages the power of Next.js, TypeScript, and Firebase to provide a seamless user experience. With Commenteer, creators can easily create custom sets of comments to enhance engagement and interaction with their audience.',
       features: [
         'Non-registered users can search for wishlists by email',
         'User registration and login with email',
