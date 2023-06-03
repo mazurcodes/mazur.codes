@@ -29,6 +29,7 @@ const { gifter, commenteer, backnotes, backnotesapi } = projectsData;
           src="/assets/GifterImageSide.png"
           alt="Gifter app on mobile, tablet and desktop screens"
           class="w-full"
+          loading="lazy"
         />
       </div>
     </article>
@@ -40,6 +41,7 @@ const { gifter, commenteer, backnotes, backnotesapi } = projectsData;
           src="/assets/CommenteerImageSide.png"
           alt="Commenteer app on mobile, tablet and desktop screens"
           class="w-full"
+          loading="lazy"
         />
       </div>
       <div class="text-side order-1 flex flex-1 flex-col">
@@ -57,7 +59,7 @@ const { gifter, commenteer, backnotes, backnotesapi } = projectsData;
           {commenteer.description.text}
         </p>
         <a
-          href="#"
+          href="/commenteer"
           class="self-end rounded-full bg-slate-600 px-6 py-3 text-white"
           >See more</a
         >
@@ -66,7 +68,11 @@ const { gifter, commenteer, backnotes, backnotesapi } = projectsData;
     <article
       class="mx-4 mb-10 flex flex-col items-center rounded-3xl bg-white p-5 text-center shadow-article transition hover:scale-[1.005] hover:shadow-article-hover md:mx-8 md:p-14 xl:p-24"
     >
-      <img src="/assets/BackNotesLogo.svg" alt="backnotes app logo" />
+      <img
+        src="/assets/BackNotesLogo.svg"
+        alt="backnotes app logo"
+        loading="lazy"
+      />
       <h2 class="max-w-3xl py-6 text-4xl font-black text-[#DBDBDB] md:text-7xl">
         Your favorite markdown editor
       </h2>
@@ -104,6 +110,7 @@ const { gifter, commenteer, backnotes, backnotesapi } = projectsData;
           src="/assets/BackNotesAPIImageSide.png"
           alt="backnotes API code in vscode editor"
           class="w-full"
+          loading="lazy"
         />
       </div>
     </article>
