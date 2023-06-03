@@ -9,6 +9,10 @@ export type Project = {
     articleHeader: string;
     articleUnderline: string;
   };
+  github: {
+    text?: string;
+    link?: string;
+  };
   share: {
     twitter: string;
     linkedIn: string;
@@ -33,10 +37,16 @@ export type Project = {
     tech: TechStack[];
     afterText?: string;
   };
-  acknowledgements: { text: string; links: { name: string; link: string }[] };
+  acknowledgements?: { text: string; links: { name: string; link: string }[] };
   license: string;
 
-  images: { id: string; alt: string; path: string }[];
+  images: {
+    tile: { alt: string; path: string };
+    article: { alt: string; path: string }[];
+    agile: { alt: string; path: string };
+    design: { alt: string; path: string };
+    views: { id: string; alt: string; path: string }[];
+  };
 };
 
 export type ProjectList = {
