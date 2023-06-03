@@ -2,10 +2,17 @@
 import type { Project } from '@types';
 
 interface Props {
-  data: Project;
+  data: {
+    twitter: string;
+    linkedIn: string;
+    facebook: string;
+    whatsapp: string;
+  };
 }
 
 const { data } = Astro.props;
+
+const { twitter, linkedIn, facebook, whatsapp } = data;
 ---
 
 <section>
@@ -13,16 +20,16 @@ const { data } = Astro.props;
     class="mx-auto mt-[100px] flex max-w-[260px] items-center md:max-w-[600px] lg:max-w-[800px]"
   >
     <div class="flex flex-wrap gap-5">
-      <a href={data.share.twitter} target="_blank"
+      <a href={twitter} target="_blank"
         ><img src="/assets/twitterRoundIcon.svg" /></a
       >
-      <a href={data.share.linkedIn} target="_blank"
+      <a href={linkedIn} target="_blank"
         ><img src="/assets/linkedinRoundIcon.svg" /></a
       >
-      <a href={data.share.facebook} target="_blank"
+      <a href={facebook} target="_blank"
         ><img src="/assets/facebookRoundIcon.svg" /></a
       >
-      <a href={data.share.whatsapp} target="_blank"
+      <a href={whatsapp} target="_blank"
         ><img src="/assets/whatsupRoundIcon.svg" /></a
       >
     </div>

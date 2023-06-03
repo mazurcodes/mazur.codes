@@ -1,12 +1,23 @@
 ---
 import type { Project } from '@types';
-import Article from './article.astro';
+import Article from './Article.astro';
 
 interface Props {
-  data: Project;
+  data: {
+    agile: {
+      text: string;
+      link: string;
+    };
+    image: { alt: string; path: string };
+  };
 }
 
 const { data } = Astro.props;
+
+const {
+  agile: { text, link },
+  image: { alt, path },
+} = data;
 ---
 
 <section>
@@ -15,15 +26,9 @@ const { data } = Astro.props;
   >
     <Article header="Tasks" title="Agile Board on Trello" />
     <p class="py-8">
-      {data.agile.text}
+      {text}
     </p>
-    <a href={data.agile.link} target="_blank" class="underline"
-      >Link to Trello</a
-    >
-    <img
-      src="/assets/img-gifter-trello-small-800.png"
-      alt="hello"
-      class="mt-10"
-    />
+    <a href={link} target="_blank" class="underline">Link to Trello</a>
+    <img src={path} alt={alt} class="mt-10" />
   </div>
 </section>

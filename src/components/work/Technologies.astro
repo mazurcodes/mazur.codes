@@ -1,13 +1,20 @@
 ---
 import type { Project } from '@types';
-import Article from './article.astro';
+import Article from './Article.astro';
 import { technologiesData } from '@data/technologies';
+import type { TechStack } from 'src/types/constants';
 
 interface Props {
-  data: Project;
+  data: {
+    beforeText?: string;
+    tech: TechStack[];
+    afterText?: string;
+  };
 }
 
 const { data } = Astro.props;
+
+const { beforeText, tech, afterText } = data;
 ---
 
 <section>
@@ -15,10 +22,10 @@ const { data } = Astro.props;
     class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]"
   >
     <Article header="Tech" title="Technologies Used" />
-    <p class="py-8 leading-8">{data.technologies.beforeText}</p>
+    <p class="py-8 leading-8">{beforeText}</p>
     <ul>
       {
-        data.technologies.tech.map((tech) => {
+        tech.map((tech) => {
           return (
             <div class="flex items-center py-5">
               <div class="grid h-[50px] w-[50px] place-items-center">
@@ -37,6 +44,6 @@ const { data } = Astro.props;
         })
       }
     </ul>
-    <p class="py-8 leading-8">{data.technologies.afterText}</p>
+    <p class="py-8 leading-8">{afterText}</p>
   </div>
 </section>

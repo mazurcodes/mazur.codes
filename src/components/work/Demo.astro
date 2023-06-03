@@ -1,26 +1,27 @@
 ---
 import type { Project } from '@types';
-import Article from './article.astro';
+import Article from './Article.astro';
 
 interface Props {
-  data: Project;
+  data: {
+    text: string;
+    link: string;
+  };
 }
 
 const { data } = Astro.props;
 
-const text = `${data.demo.text} <a href="${data.demo.link}"}>Link</a>`;
+const { text, link } = data;
 ---
 
 <section>
   <div
     class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]"
   >
-    <Article header="Demo" title="Gifter on Vercel" />
+    <Article header="Demo" title="Preview on Vercel" />
     <p class="py-8">
-      {data.demo.text}
+      {text}
     </p>
-    <a href={data.demo.link} target="_blank" class="underline"
-      >Link to website</a
-    >
+    <a href={link} target="_blank" class="underline">Link to website</a>
   </div>
 </section>

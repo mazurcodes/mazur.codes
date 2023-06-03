@@ -1,24 +1,24 @@
 ---
 import type { Project } from '@types';
-import Article from './article.astro';
+import Article from './Article.astro';
 
 interface Props {
-  data: Project;
+  data: { text: string; links: { name: string; link: string }[] };
 }
 
-const { data } = Astro.props;
+const {
+  data: { text, links },
+} = Astro.props;
 ---
 
 <section>
-  <div class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]">
-    <Article
-      header="Acknowledgements"
-      title="Thank Yous"
-      text={data.acknowledgements.text}
-    />
+  <div
+    class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]"
+  >
+    <Article header="Acknowledgements" title="Thank Yous" text={text} />
     <ul>
       {
-        data.acknowledgements.links.map(({ name, link }) => {
+        links.map(({ name, link }) => {
           return (
             <li class="ml-10 list-disc">
               <strong>{name}</strong> on{' '}

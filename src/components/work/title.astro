@@ -2,13 +2,17 @@
 import type { Project } from '@types';
 
 interface Props {
-  text: string;
-  color: string;
-  articleHeader: string;
-  articleUnderline: string;
+  data: {
+    text: string;
+    color: string;
+    articleHeader: string;
+    articleUnderline: string;
+  };
 }
 
-const { text, color, articleHeader, articleUnderline } = Astro.props;
+const { data } = Astro.props;
+
+const { text, color, articleHeader, articleUnderline } = data;
 ---
 
 <section>

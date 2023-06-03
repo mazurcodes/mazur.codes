@@ -1,22 +1,23 @@
 ---
 import type { Project } from '@types';
-import Article from './article.astro';
-import KeyFeatures from './keyFeatures.astro';
+import Article from './Article.astro';
+import KeyFeatures from './KeyFeatures.astro';
 
 interface Props {
-  data: Project;
+  data: { text: string; features: string[] };
 }
 
 const { data } = Astro.props;
+
+const { text, features } = data;
 ---
 
 <section>
-  <div class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]">
-    <Article
-      header="Description"
-      title="About this project"
-      text={data.description.text}
-    />
-    <KeyFeatures features={data.description.features} />
+  <div
+    class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]"
+  >
+    <Article header="Description" title="About this project" text={text} />
+    <a href=""></a>
+    <KeyFeatures features={features} />
   </div>
 </section>

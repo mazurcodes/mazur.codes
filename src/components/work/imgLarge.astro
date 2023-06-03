@@ -1,13 +1,18 @@
 ---
 interface Props {
-  url: string;
+  data: {
+    alt: string;
+    path: string;
+  };
 }
 
-const { url } = Astro.props;
+const {
+  data: { alt, path },
+} = Astro.props;
 ---
 
 <section>
   <div class="mx-auto max-w-[260px] md:max-w-[600px] lg:max-w-[800px]">
-    <img src={url} alt="" class="mt-[50px]" />
+    <img src={path} alt={alt} class="mt-[50px]" />
   </div>
 </section>

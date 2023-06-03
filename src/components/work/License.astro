@@ -1,9 +1,9 @@
 ---
 import type { Project } from '@types';
-import Article from './article.astro';
+import Article from './Article.astro';
 
 interface Props {
-  data: Project;
+  data: string;
 }
 
 const { data } = Astro.props;
@@ -13,6 +13,6 @@ const { data } = Astro.props;
   <div
     class="mx-auto mt-[100px] max-w-[260px] md:max-w-[600px] lg:max-w-[800px]"
   >
-    <Article header="Legal" title="License" text={data.license} />
+    <Article header="Legal" title="License" text={data} />
   </div>
 </section>

@@ -1,12 +1,23 @@
 ---
 import type { Project } from '@types';
-import Article from './article.astro';
+import Article from './Article.astro';
 
 interface Props {
-  data: Project;
+  data: {
+    design: {
+      text: string;
+      link: string;
+    };
+    image: { alt: string; path: string };
+  };
 }
 
 const { data } = Astro.props;
+
+const {
+  design: { text, link },
+  image: { alt, path },
+} = data;
 ---
 
 <section>
@@ -15,11 +26,9 @@ const { data } = Astro.props;
   >
     <Article header="Design" title="Design on Figma" />
     <p class="py-8">
-      {data.design.text}
+      {text}
     </p>
-    <a href={data.design.link} target="_blank" class="underline"
-      >Link to Figma</a
-    >
-    <img src="/assets/img-gifter-figma-800.png" alt="" class="mt-10" />
+    <a href={link} target="_blank" class="underline">Link to Figma</a>
+    <img src={path} alt={alt} class="mt-10" />
   </div>
 </section>

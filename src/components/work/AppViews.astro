@@ -1,9 +1,9 @@
 ---
 import type { Project } from '@types';
-import Article from './article.astro';
+import Article from './Article.astro';
 
 interface Props {
-  data: Project;
+  data: { id: string; alt: string; path: string }[];
 }
 
 const { data } = Astro.props;
@@ -15,7 +15,12 @@ const { data } = Astro.props;
   >
     <Article header="Graphics" title="App views" />
     <div class="flex flex-wrap justify-between gap-[50px] pt-8">
-      <img src="/assets/img-gifter-main-menu-800.png" alt="" />
+      {
+        data.map((image) => {
+          return <img src={image.path} alt={image.alt} />;
+        })
+      }
+      <!-- <img src={data} alt="" />
       <img
         src="/assets/img-gifter-auth-signup-800.png"
         alt=""
@@ -53,6 +58,7 @@ const { data } = Astro.props;
         class="lg:w-[370px]"
       />
       <img src="/assets/img-gifter-dashboard-delete-800.png" alt="" />
+    </div> -->
     </div>
   </div>
 </section>
