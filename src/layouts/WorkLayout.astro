@@ -1,7 +1,7 @@
 ---
-import Header from '@components/header.astro';
 import Social from '@components/social.astro';
 import Contact from '@components/contact.astro';
+import HeaderProject from '@components/work/HeaderProject.astro';
 
 const { title } = Astro.props;
 ---
@@ -15,7 +15,7 @@ const { title } = Astro.props;
   </head>
   <body class="font-body">
     <div class="wrapper-main">
-      <Header />
+      <HeaderProject />
       <slot />
       <Social />
       <Contact />
