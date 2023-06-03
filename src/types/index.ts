@@ -6,9 +6,9 @@ export type Project = {
   title: {
     text: string;
     color: string;
+    articleHeader: string;
+    articleUnderline: string;
   };
-  articleHeader: string;
-  articleUnderline: string;
   share: {
     twitter: string;
     linkedIn: string;

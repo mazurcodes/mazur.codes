@@ -5,9 +5,12 @@ export const projectsData: ProjectList = {
   gifter: {
     id: 1,
     slug: 'gifter',
-    title: { text: 'Gifter', color: '#E44F26' },
-    articleHeader: 'Elevate the Joy of Giving',
-    articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
+    title: { 
+      text: 'Gifter', 
+      color: '#E44F26',
+      articleHeader: 'Elevate the Joy of Giving',
+      articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
+     },
     share: {
       twitter: 'https://twitter.com/',
       linkedIn: 'https://twitter.com/',
