@@ -128,4 +128,40 @@ export const technologiesData: TechList = {
       'Comprehensive testing framework for web applications, offering a rich set of testing utilities and integration with popular testing libraries to ensure reliable and high-quality code.',
     img: 'vitest-tech-icon.svg',
   },
+  firebase: {
+    id: 15,
+    slug: TechStack.FIREBASE,
+    titleLine1: 'Firebase',
+    titleLine2: 'Auth & Database',
+    description:
+      "Google's scalable platform for web and mobile apps. It provides real-time database, authentication, hosting, cloud functions, and analytics for simplified backend development and seamless integration.",
+    img: 'firebase-tech-icon.svg',
+  },
+  reactfirebasehooks: {
+    id: 16,
+    slug: TechStack.REACTFIREBASEHOOKS,
+    titleLine1: 'React-Firebase-Hooks',
+    titleLine2: 'Easy Firebase integration',
+    description:
+      'A set of React hooks that simplify Firebase integration in React apps. It provides easy access to Firebase services like authentication, Firestore, and real-time database, enhancing development speed and efficiency.',
+    img: 'reactfirebasehooks-tech-icon.svg',
+  },
+  reacthookform: {
+    id: 17,
+    slug: TechStack.REACTHOOKFORM,
+    titleLine1: 'React Hook Form',
+    titleLine2: 'Form Library for React',
+    description:
+      'Lightweight form validation library for React. It enables easy form handling, validation, and error management using custom hooks, improving user experience and developer productivity with concise and scalable code.',
+    img: 'reacthookform-tech-icon.svg',
+  },
+  tailwindcss: {
+    id: 18,
+    slug: TechStack.TAILWINDCSS,
+    titleLine1: 'TaiwindCSS',
+    titleLine2: 'Utility-first CSS',
+    description:
+      'Highly customizable utility-first CSS framework that allows you to rapidly build modern, responsive web interfaces. It simplifies development and empowers designers and developers to create visually stunning websites.',
+    img: 'tailwind-tech-icon.svg',
+  },
 };

@@ -77,4 +77,8 @@ export type TechList = {
   [TechStack.STYLED_COMPONENTS]: Technology;
   [TechStack.TYPESCRIPT]: Technology;
   [TechStack.VITEST]: Technology;
+  [TechStack.FIREBASE]: Technology;
+  [TechStack.REACTFIREBASEHOOKS]: Technology;
+  [TechStack.REACTHOOKFORM]: Technology;
+  [TechStack.TAILWINDCSS]: Technology;
 };

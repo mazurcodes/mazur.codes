@@ -13,4 +13,8 @@ export enum TechStack {
   STYLED_COMPONENTS = 'styledcomponents',
   MARKDOWN_IT = 'markdownit',
   REDUX = 'redux',
+  FIREBASE = 'firebase',
+  REACTFIREBASEHOOKS = 'reactfirebasehooks',
+  REACTHOOKFORM = 'reacthookform',
+  TAILWINDCSS = 'tailwindcss',
 }
