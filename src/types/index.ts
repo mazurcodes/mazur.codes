@@ -82,3 +82,31 @@ export type TechList = {
   [TechStack.REACTHOOKFORM]: Technology;
   [TechStack.TAILWINDCSS]: Technology;
 };
+
+export type Meta = {
+  meta: {
+    title: string;
+    description: string;
+    keywords: string;
+    viewport: string;
+    author: string;
+  };
+  og: {
+    type: string;
+    title: string;
+    description: string;
+    image: string;
+    url: string;
+    locale: string;
+    site_name: string;
+    app_id: string;
+  };
+  twitter: {
+    card: string;
+    site: string;
+    title: string;
+    description: string;
+    'image:src': string;
+    creator: string;
+  };
+};
