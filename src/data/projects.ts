@@ -15,9 +15,15 @@ export const projectsData: ProjectList = {
       twitter: encodeURI(
         'https://twitter.com/share?url=https://mazur.codes/&title=Check this out: \nBartek Mazur - Front-end Developer&summary='
       ),
-      linkedIn: 'https://twitter.com/',
-      facebook: 'https://www.facebook.com/',
-      whatsapp: 'https://www.whatsapp.com/',
+      linkedIn: encodeURI(
+        'https://www.linkedin.com/sharing/share-offsite/?url=https://mazur.codes/'
+      ),
+      facebook: encodeURI(
+        'https://www.facebook.com/sharer/sharer.php?u=http://mazur.codes&quote=Check out this developer!'
+      ),
+      whatsapp: encodeURI(
+        'https://wa.me/?text=Check out this developer: mazur.codes'
+      ),
     },
     description: {
       text: "Gifter is a web application designed to simplify the process of gift-giving. It allows users to create a personalized gift wishlist and share it with friends and family. Whether it's for a birthday, wedding, holiday, or any other special occasion, Gifter makes it easy for both gift recipients and gift-givers to connect and exchange meaningful presents.",
@@ -153,10 +159,18 @@ export const projectsData: ProjectList = {
       articleUnderline: 'Powerful tool for media creators',
     },
     share: {
-      twitter: 'https://twitter.com/',
-      linkedIn: 'https://twitter.com/',
-      facebook: 'https://www.facebook.com/',
-      whatsapp: 'https://www.whatsapp.com/',
+      twitter: encodeURI(
+        'https://twitter.com/share?url=https://mazur.codes/&title=Check this out: \nBartek Mazur - Front-end Developer&summary='
+      ),
+      linkedIn: encodeURI(
+        'https://www.linkedin.com/sharing/share-offsite/?url=https://mazur.codes/'
+      ),
+      facebook: encodeURI(
+        'https://www.facebook.com/sharer/sharer.php?u=http://mazur.codes&quote=Check out this developer!'
+      ),
+      whatsapp: encodeURI(
+        'https://wa.me/?text=Check out this developer: mazur.codes'
+      ),
     },
     description: {
       text: 'Commenteer is an application specifically designed for media creators to simplify the process of generating multiple comments for their content. It leverages the power of Next.js, TypeScript, and Firebase to provide a seamless user experience. With Commenteer, creators can easily create custom sets of comments to enhance engagement and interaction with their audience. The application allows users to specify the project name, comment type (positive, negative, neutral, or questions), and the desired quantity of comments.',
@@ -278,10 +292,18 @@ export const projectsData: ProjectList = {
       articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
     },
     share: {
-      twitter: 'https://twitter.com/',
-      linkedIn: 'https://twitter.com/',
-      facebook: 'https://www.facebook.com/',
-      whatsapp: 'https://www.whatsapp.com/',
+      twitter: encodeURI(
+        'https://twitter.com/share?url=https://mazur.codes/&title=Check this out: \nBartek Mazur - Front-end Developer&summary='
+      ),
+      linkedIn: encodeURI(
+        'https://www.linkedin.com/sharing/share-offsite/?url=https://mazur.codes/'
+      ),
+      facebook: encodeURI(
+        'https://www.facebook.com/sharer/sharer.php?u=http://mazur.codes&quote=Check out this developer!'
+      ),
+      whatsapp: encodeURI(
+        'https://wa.me/?text=Check out this developer: mazur.codes'
+      ),
     },
     description: {
       text: 'Commenteer is an application specifically designed for media creators to simplify the process of generating multiple comments for their content. It leverages the power of Next.js, TypeScript, and Firebase to provide a seamless user experience. With Commenteer, creators can easily create custom sets of comments to enhance engagement and interaction with their audience.',
@@ -408,7 +430,7 @@ export const projectsData: ProjectList = {
   },
   backnotesapi: {
     id: 1,
-    slug: 'gifter',
+    slug: 'backnotesAPI',
     title: {
       text: 'Gifter',
       color: '#E44F26',
@@ -416,10 +438,18 @@ export const projectsData: ProjectList = {
       articleUnderline: 'A Game-Changing Wishlist Sharing Platform',
     },
     share: {
-      twitter: 'https://twitter.com/',
-      linkedIn: 'https://twitter.com/',
-      facebook: 'https://www.facebook.com/',
-      whatsapp: 'https://www.whatsapp.com/',
+      twitter: encodeURI(
+        'https://twitter.com/share?url=https://mazur.codes/&title=Check this out: \nBartek Mazur - Front-end Developer&summary='
+      ),
+      linkedIn: encodeURI(
+        'https://www.linkedin.com/sharing/share-offsite/?url=https://mazur.codes/'
+      ),
+      facebook: encodeURI(
+        'https://www.facebook.com/sharer/sharer.php?u=http://mazur.codes&quote=Check out this developer!'
+      ),
+      whatsapp: encodeURI(
+        'https://wa.me/?text=Check out this developer: mazur.codes'
+      ),
     },
     description: {
       text: "Gifter is a web application designed to simplify the process of gift-giving. It allows users to create a personalized gift wishlist and share it with friends and family. Whether it's for a birthday, wedding, holiday, or any other special occasion, Gifter makes it easy for both gift recipients and gift-givers to connect and exchange meaningful presents.",
