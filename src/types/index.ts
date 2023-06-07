@@ -2,7 +2,7 @@ import type { TechStack } from './constants';
 
 export type Project = {
   id: number;
-  slug: string;
+  slug: 'gifter' | 'commenteer' | 'backnotes' | 'backnotesAPI';
   title: {
     text: string;
     color: string;

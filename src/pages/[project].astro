@@ -36,10 +36,11 @@ const {
   github,
   technologies,
   title,
+  slug,
 } = projectsData[Astro.params.project!]; // TODO check if Astro fixed this issue with {project} = Astro.props
 ---
 
-<WorkLayout title={`Bartek Mazur - ${title.text} project`}>
+<WorkLayout title={`Bartek Mazur - ${title.text} project`} slug={slug} }>
   <Logo />
   <Title data={title} />
   <Share data={share} />

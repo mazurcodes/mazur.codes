@@ -9,31 +9,30 @@ import type { Meta } from '@types';
 
 interface Props {
   title: string;
-  meta: Meta;
+  metaData: Meta;
 }
 
-const { title, meta } = Astro.props;
+const { title, metaData } = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     {
-      Object.entries(meta.meta).map(([name, content]) => {
+      Object.entries(metaData.meta).map(([name, content]) => {
         return <meta name={name} content={content} />;
       })
     }
     {
-      Object.entries(meta.og).map(([property, content]) => {
+      Object.entries(metaData.og).map(([property, content]) => {
         return <meta property={`og:${property}`} content={content} />;
       })
     }
     {
-      Object.entries(meta.twitter).map(([name, content]) => {
+      Object.entries(metaData.twitter).map(([name, content]) => {
         return <meta name={`twitter:${name}`} content={content} />;
       })
     }
-
     <title>{title}</title>
   </head>
   <body class="font-body">

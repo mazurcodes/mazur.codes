@@ -2,15 +2,37 @@
 import Social from '@components/social.astro';
 import Contact from '@components/contact.astro';
 import HeaderProject from '@components/work/HeaderProject.astro';
+import metaData from '@data/meta';
 
-const { title } = Astro.props;
+interface Props {
+  title: string;
+  slug: string;
+}
+
+const { title, slug } = Astro.props;
+
+const metaTags = metaData[slug];
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    {
+      Object.entries(metaTags.meta).map(([name, content]) => {
+        return <meta name={name} content={content} />;
+      })
+    }
+    {
+      Object.entries(metaTags.og).map(([property, content]) => {
+        return <meta property={`og:${property}`} content={content} />;
+      })
+    }
+    {
+      Object.entries(metaTags.twitter).map(([name, content]) => {
+        return <meta name={`twitter:${name}`} content={content} />;
+      })
+    }
     <title>{title}</title>
   </head>
   <body class="font-body">

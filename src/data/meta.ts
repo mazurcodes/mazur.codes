@@ -169,3 +169,17 @@ export const backnotesAPIMetaData: Meta = {
     'image:src': '',
   },
 };
+
+type MetaList = {
+  [key: string]: Meta;
+};
+
+const metaData: MetaList = {
+  main: mainMetaData,
+  gifter: gifterMetaData,
+  commenteer: commenteerMetaData,
+  backnotes: backnotesMetaData,
+  backnotesAPI: backnotesAPIMetaData,
+};
+
+export default metaData;
