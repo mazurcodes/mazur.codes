@@ -47,7 +47,7 @@ export const projectsData: ProjectList = {
     },
     design: {
       text: 'Check my design at Figma',
-      link: 'https://www.figma.com',
+      link: 'https://www.figma.com/file/E9B0fIwaF0TYstJH33r7Aa/Gifter?type=design&node-id=0%3A1&t=T7GS73OTMUOnr5Yk-1',
     },
     technologies: {
       beforeText:
